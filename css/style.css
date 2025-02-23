@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    padding: 15px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar div {
+    margin: 0 15px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar div:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+/* Main Section */
+.main {
+    padding: 40px 20px;
+}
+
+.first-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    max-width: 90%;
+    margin: auto;
+}
+
+.left img {
+    width:50%;
+    /* max-width: 350px; */
+    border-radius: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left img:hover {
+    transform: scale(1.1);
+}
+
+.right {
+    text-align: center;
+    padding: 20px;
+}
+
+.right h1 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.sider{
+    
+    width:100%;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+   }   } 
+
+/* Styling for the video container */
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin: 20px auto; /* Center alignment */
+}
+
+/* Customizing video controls */
+video::-webkit-media-controls-panel {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent controls */
+    border-radius: 10px;
+}
+
+video:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    .first-container {
+        flex-direction: column;
+    }
+
+    .left img {
+        max-width: 250px;
+    }
+
+    .gallery {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar div {
+        margin: 5px 0;
+    }
+
+    .first-container {
+        padding: 15px;
+    }
+
+    .left img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 20px 10px;
+    }
+
+    .gallery {
+        max-width: 100%;
+    }
+
+    .first-container {
+        padding: 10px;
+    }
+
+    .left img {
+        max-width: 150px;
+    }
+}
+
+
+
+

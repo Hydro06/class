@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic-bus</title>
+    <link rel="stylesheet" href="/basic/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div><a href="#">Home</a></div>
+        <div><a href="#gallery">Gallery</a></div>
+        <!-- <div><a href="#feedback">Feedback</a></div> -->
+    </nav>
+    <div class="main">
+        <div class="first-container">
+            <div class="left">
+                <img src="/basic/image/magic.jpg" alt="magic-bus">
+
+            </div>
+            <div class="right">
+                <h1>Web-Design</h1>
+                <p>Hey guys! ❤️<br>
+                    It’s hard to believe that our journey at Magic Bus is coming to an end. 😢<br>
+
+                    <br>
+                    We've spent so many moments together—laughing, learning, struggling, and growing. Our trainers have
+                    been more than just guides; they've been like our mentors, our biggest supporters.Absolutely. The
+                    people we truly touch will always carry a piece of us in their hearts—through memories, laughter,
+                    and the impact we leave behind. A kind word, a shared moment, or even a small gesture can become a
+                    lasting gift. Sometimes, we don’t realize it, but we live on in the stories they tell and the love
+                    they feel when they think of us. 💖✨
+                    <br>
+
+                    <br>
+                    We walked in as strangers, became friends, and now leave as family. No matter where life takes us,
+                    the memories we've made together will always bring us back. Classrooms may change, but the laughter,
+                    lessons, and friendships stay forever. One day, we’ll look back and smile at the days when all we
+                    had to worry about was homework and lunch breaks, because friends like you are the chapters in my
+                    story that I’ll never forget. ✨📖🥺❤💙
+                </p>
+
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1 class="heading">Gallery</h1>
+        <div id="gallery" class="gallery">
+            <img class="sider" src="/basic/image/magic.jpg" alt="image1">
+            <img class="sider" src="/basic/image/img1.jpg" alt="image2">
+            <img class="sider" src="/basic/image/gift.jpg" alt="image3">
+            <img class="sider" src="/basic/image/friend.jpg" alt="image4">
+            <img class="sider" src="/basic/image/img5.jpg" alt="image5">
+            <img class="sider" src="\basic\image\tradition .jpg" alt="image6">
+            <img class="sider" src="/basic/image/img.jpg" alt="image7">
+            <img class="sider" src="/basic/image/img8.jpg" alt="image8">
+            <img class="sider" src="/basic/image/img11.jpg" alt="image9">
+            <img class="sider" src="/basic/image/img10.jpg" alt="image10">
+            <img class="sider" src="/basic/image/luckboy.jpg" alt="image11">
+        </div>
+        <br>
+        <hr>
+        <br>
+
+
+         <h1 id="memories">Memories</h1>
+         <h3>Best Moment</h3>
+   
+        
+        <video width="320" height="240" controls>
+            <source src="/basic/image/journey .mp4" type="video/mp4">
+            
+        </video>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("sider");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</body>
+
+</html>
